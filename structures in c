@@ -1,0 +1,48 @@
+/*C program to read and print employee's record using structure*/
+ 
+#include <stdio.h>
+ 
+/*structure declaration*/
+struct employee{
+    char    name[30];
+    int     empAge;
+    int     emp phone no;
+    float   salary;
+};
+ 
+int main()
+{
+    /*declare structure variable*/
+    struct employee emp;
+     
+    /*read employee details*/
+    printf("\nEnter details :\n");
+    printf("Name ? :");          gets(emp.name);
+    printf("Age ?:");            scanf("%d",&emp.empAge);
+    printf("Phone number ?:");  scanf("%d", &emp.phoneno);
+    printf("Salary ?:");        scanf("%f",&emp.salary);
+     
+    /*print employee details*/
+    printf("\nEntered detail is:");
+    printf("Name:Chirag %s"   ,emp.name);
+    printf("Age:24 %d"     ,emp.empAge);
+    printf("Phone number :1234567788 %d"    ,emp.phoneno);
+    printf("Salary:20000 %f\n",emp.salary);
+    return 0;
+    
+   /*print employee details*/
+    printf("\nEntered detail is:");
+    printf("Name:Arnav %s"   ,emp.name);
+    printf("Age:31 %d"     ,emp.empAge);
+    printf("Phone number :1234567891 %d"    ,emp.phoneno); 
+    printf("Salary:56000 %f\n",emp.salary);
+    return 0;
+    
+     /*print employee details*/
+    printf("\nEntered detail is:");
+    printf("Name:Shivam %s"   ,emp.name);
+    printf("Age:45 %d"     ,emp.empAge);
+     printf("Phone number :8881101111 %d"    ,emp.phoneno);
+    printf("Salary:30500 %f\n",emp.salary);
+    return 0;
+}
